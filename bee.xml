@@ -6,9 +6,15 @@
            remote="github"/>
 
   <project name="bee"
-           path="bee/bee"/>
+           path="bee/bee">
+    <copyfile src="build/Makefile" dest="bee/Makefile" />
+  </project>
 
   <project name="mosquitto"
            path="bee/mosquitto"/>
+
+  <project name="openssl"
+           path="bee/openssl"/>
+
 
 </manifest>
